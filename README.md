@@ -1,16 +1,43 @@
-# taskflow
+# TaskFlow
 
-A new Flutter project.
+A task management app built with Flutter, featuring a clean dashboard UI with sidebar navigation, task status tracking, and summary statistics.
+
+## Features
+
+- Dashboard with task overview and stats (total, in progress, completed)
+- Task list with status badges (Todo / In Progress / Done)
+- Check off tasks directly from the list
+- Sidebar navigation (Home, My Tasks, Analytics, Settings)
+- Material 3 design with deep purple theme
+- Targets Android, iOS, Web, Windows, Linux, macOS
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+```bash
+flutter pub get       # Install dependencies
+flutter run           # Run on connected device/emulator
+flutter run -d chrome # Run in browser
+flutter run -d windows # Run on Windows desktop
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Project Structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+lib/
+  main.dart       # All app code: MyApp, HomePage, task widgets
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Building
+
+```bash
+flutter build apk      # Android
+flutter build web      # Web
+flutter build windows  # Windows
+```
+
+## Testing
+
+```bash
+flutter test           # Run all tests
+flutter analyze        # Lint and static analysis
+```
