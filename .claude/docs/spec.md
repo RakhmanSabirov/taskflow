@@ -18,7 +18,6 @@ TaskFlow is an educational task tracker built to practice full-cycle development
 | ORM | SQLAlchemy |
 | Migrations | Alembic |
 | Auth | JWT tokens |
-| AI | Anthropic Claude API |
 | Local infra | Docker Compose |
 
 ---
@@ -49,21 +48,6 @@ TaskFlow is an educational task tracker built to practice full-cycle development
 
 ---
 
-## 4. AI Features
-
-All AI requests go through the backend. The Claude API key is never exposed to the frontend.
-
-| Feature | Description |
-|---------|-------------|
-| Task generation | User describes what they want to do → AI suggests a list of tasks |
-| Auto-priority | AI analyzes task title and assigns a priority automatically |
-| Description generation | User writes a title → AI generates a full task description |
-| Project summary | AI produces a brief summary of the project's current state |
-
-Integration: **Anthropic Claude API**
-
----
-
 ## 5. Out of Scope (MVP)
 
 - Team collaboration and member invitations
@@ -78,7 +62,6 @@ Integration: **Anthropic Claude API**
 
 | Stage | Scope |
 |-------|-------|
-| 1 | Project setup, Docker Compose, PostgreSQL, Alembic, JWT auth |
-| 2 | Projects CRUD, Tasks CRUD, Kanban board, filtering |
-| 3 | Claude API integration: task generation, auto-priority, description gen, project summary |
-| 4 | Polish: filters, UX improvements, minor fixes |
+| 1     | Project setup, Docker Compose, PostgreSQL, Alembic, JWT auth |
+| 2     | Projects CRUD, Tasks CRUD, Kanban board, filtering |
+| 3     | Polish: filters, UX improvements, minor fixes |
